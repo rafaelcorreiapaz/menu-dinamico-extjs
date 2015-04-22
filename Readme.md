@@ -15,7 +15,10 @@ $menu[]["title"] = "Contratos";
 
 $i = 0;
 foreach($menu as $key => $value) {
-	$menu[$key]["items"] = ["xtype" => "treepanel", "expanded" => true, "rootVisible" => false, "border" => 0];
+	$menu[$key]["items"]["xtype"] = "treepanel";
+	$menu[$key]["items"]["expanded"] = true;
+	$menu[$key]["items"]["rootVisible"] = false;
+	$menu[$key]["items"]["border"] = 0;
 	$menu[$key]["items"]["root"]["children"] = [];
 	$menu[$key]["items"]["root"]["children"][0]["text"] = "Nota Fiscal1";
 	$menu[$key]["items"]["root"]["children"][0]["leaf"] = true;
