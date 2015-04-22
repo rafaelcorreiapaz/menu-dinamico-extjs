@@ -12,10 +12,9 @@ Ext.define('Menu.view.main.MainController', {
 
 		// menu.add();
 		Ext.Ajax.request({
-			url: 'php/menu.php',
+			url: 'app/menu.php',
 			success: function(response){
 				var obj = Ext.JSON.decode(response.responseText);
-				console.log(obj);
 				menu.add(obj);
 		    }
 		});

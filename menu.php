@@ -1,10 +1,3 @@
-# Menu dinâmico ExtJS com PHP
-
-Este é um exemplo de Menu Dinâmico do ExtJS com PHP, digo com PHP mas pode ser feito em qualquer linguagem back-end.
-Este repositório contém a pasta "app" de um Projeto Ext, na versão 5.1.
-
-O menu é customizado pelo arquivo "menu.php". Como segue abaixo:
-
 <?php
 
 $menu = [];
@@ -28,25 +21,3 @@ foreach($menu as $key => $value) {
 }
 
 echo json_encode($menu);
-
-?>
-
-Este arquivo gerará um menu assim:
-
-Gerenciar
-	- Nota Fiscal1
-	- Nota Fiscal2
-	- Nota Fiscal3
-	- Nota Fiscal4
-Relatórios
-	- Nota Fiscal1
-	- Nota Fiscal2
-	- Nota Fiscal3
-	- Nota Fiscal4
-Contratos
-	- Nota Fiscal1
-	- Nota Fiscal2
-	- Nota Fiscal3
-	- Nota Fiscal4
-
-Portanto, a partir deste arquivo você pode se conectar a qualquer banco de dados (MySQL, PostgreSQL, etc...), e gerar um menu dinamicamente.
