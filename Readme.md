@@ -8,27 +8,27 @@ O menu é customizado pelo arquivo "menu.php". Como segue abaixo:
 <code>
 <?php
 
-$menu = [];
-$menu[]["title"] = "Gerenciar";
-$menu[]["title"] = "Relatórios";
-$menu[]["title"] = "Contratos";
+$menu = [];\n
+$menu[]["title"] = "Gerenciar";\n
+$menu[]["title"] = "Relatórios";\n
+$menu[]["title"] = "Contratos";\n\n
 
-$i = 0;
-foreach($menu as $key => $value) {
-	$menu[$key]["items"] = ["xtype" => "treepanel", "expanded" => true, "rootVisible" => false, "border" => 0];
-	$menu[$key]["items"]["root"]["children"] = [];
-	$menu[$key]["items"]["root"]["children"][0]["text"] = "Nota Fiscal1";
-	$menu[$key]["items"]["root"]["children"][0]["leaf"] = true;
-	$menu[$key]["items"]["root"]["children"][1]["text"] = "Nota Fiscal2";
-	$menu[$key]["items"]["root"]["children"][1]["leaf"] = true;
-	$menu[$key]["items"]["root"]["children"][2]["text"] = "Nota Fiscal3";
-	$menu[$key]["items"]["root"]["children"][2]["leaf"] = true;
-	$menu[$key]["items"]["root"]["children"][3]["text"] = "Nota Fiscal4";
-	$menu[$key]["items"]["root"]["children"][3]["leaf"] = true;
-	++$i;
-}
+$i = 0;\n
+foreach($menu as $key => $value) {\n
+	$menu[$key]["items"] = ["xtype" => "treepanel", "expanded" => true, "rootVisible" => false, "border" => 0];\n
+	$menu[$key]["items"]["root"]["children"] = [];\n
+	$menu[$key]["items"]["root"]["children"][0]["text"] = "Nota Fiscal1";\n
+	$menu[$key]["items"]["root"]["children"][0]["leaf"] = true;\n
+	$menu[$key]["items"]["root"]["children"][1]["text"] = "Nota Fiscal2";\n
+	$menu[$key]["items"]["root"]["children"][1]["leaf"] = true;\n
+	$menu[$key]["items"]["root"]["children"][2]["text"] = "Nota Fiscal3";\n
+	$menu[$key]["items"]["root"]["children"][2]["leaf"] = true;\n
+	$menu[$key]["items"]["root"]["children"][3]["text"] = "Nota Fiscal4";\n
+	$menu[$key]["items"]["root"]["children"][3]["leaf"] = true;\n
+	++$i;\n
+}\n\n
 
-echo json_encode($menu);
+echo json_encode($menu);\n\n
 
 ?>
 </code>
