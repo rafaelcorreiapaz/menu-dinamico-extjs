@@ -5,6 +5,7 @@ Este repositório contém a pasta "app" de um Projeto Ext, na versão 5.1.
 
 O menu é customizado pelo arquivo "menu.php". Como segue abaixo:
 
+<code>
 <?php
 
 $menu = [];
@@ -30,6 +31,7 @@ foreach($menu as $key => $value) {
 echo json_encode($menu);
 
 ?>
+</code>
 
 Este arquivo gerará um menu assim:
 
